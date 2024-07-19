@@ -227,6 +227,7 @@ class ProductController extends Controller
         // Atualiza o produto
         $product = $this->productService->update($request->all(), $id);
 
-        return response()->json($product, 200);
+        // Retorna o produto atualizado
+        return response()->json($product, 200); // Certifique-se de que $product inclui todos os campos esperados
     }
 }
