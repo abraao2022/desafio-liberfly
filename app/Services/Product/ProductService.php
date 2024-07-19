@@ -22,4 +22,14 @@ class ProductService
     {
         return $this->productRepository->getById($id);
     }
+
+    public function create(array $data)
+    {
+        return $this->productRepository->create($data);
+    }
+
+    public function update(array $data, $id)
+    {
+        return $this->productRepository->update($data, $id);
+    }
 }

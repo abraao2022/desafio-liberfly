@@ -13,5 +13,7 @@ Route::post('refresh', [AuthController::class, 'refresh']);
 Route::middleware(['auth:api'])->group(function () {
     Route::get('products/{id}', [ProductController::class, 'show']);
     Route::get('products', [ProductController::class, 'index']);
+    Route::post('products', [ProductController::class, 'store']);
+    Route::put('products/{id}', [ProductController::class, 'update']);
     Route::get('me', [AuthController::class, 'me']);
 });
