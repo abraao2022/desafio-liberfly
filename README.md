@@ -16,6 +16,8 @@ Instale as dependências usando composer install.
 Configure o arquivo .env com suas credenciais de banco de dados e outras configurações necessárias.
 Migrações e Seeders
 
+Para facilitar, eu utilizei o Docker.
+
 Execute as migrações para criar as tabelas no banco de dados: php artisan migrate.
 Opcional: Se necessário, execute seeders para popular o banco de dados com dados iniciais.
 Execução dos Testes
